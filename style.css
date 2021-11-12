@@ -10,9 +10,15 @@ body {
     font-size: 150px;
     color: transparent;
     -webkit-background-clip: text;
+    animation: animate 10s infinite ease-in-out;
 }
 @keyframes animate {
-    
+    from {
+        background-position: 0 0;
+    }
+    to{
+        background-position: 100% 100%;
+    }
 }
 .simple-spinner {
     height: 50px;
@@ -21,7 +27,7 @@ body {
     border-radius: 50%;
     border-top-color: rgba(150, 150, 150);
     animation: rotate 1s 0s infinite ease-in-out;
-
+    
     
 }
 @keyframes rotate {
